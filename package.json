@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "node-sass-chokidar": "^1.2.2",
     "react": "^16.3.0",
     "react-dom": "^16.3.0",
     "react-router": "^4.2.0",
@@ -13,13 +14,16 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build-css": "node-sass-chokidar src/ -o src/",    
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive"
+
   },
-  "proxy":{
-    "/v3":{
-      "target":"https://mallcdn.api.epet.com",
-      "host":"mallcdn.api.epet.com",
-      "chengeOrigin":true
+  "proxy": {
+    "/v3": {
+      "target": "https://mallcdn.api.epet.com",
+      "host": "mallcdn.api.epet.com",
+      "chengeOrigin": true
     }
   }
 }
