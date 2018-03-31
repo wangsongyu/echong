@@ -1,0 +1,114 @@
+#home, #classify {
+  width: 100%;
+  height: 100%; }
+  #home .downloadApp img, #classify .downloadApp img {
+    width: 100%; }
+  #home .home_head, #classify .home_head {
+    position: fixed;
+    top: 0.55rem; }
+    #home .home_head .home_head_up, #classify .home_head .home_head_up {
+      margin-top: 0.08rem;
+      width: 100%;
+      height: 0.4rem;
+      line-height: 0.4rem; }
+      #home .home_head .home_head_up .head_up_left, #classify .home_head .home_head_up .head_up_left {
+        float: left;
+        position: relative; }
+        #home .home_head .home_head_up .head_up_left a, #classify .home_head .home_head_up .head_up_left a {
+          font-size: 14px;
+          display: inline-block;
+          margin-right: 0.05rem; }
+        #home .home_head .home_head_up .head_up_left .dogdog, #classify .home_head .home_head_up .head_up_left .dogdog {
+          margin-left: 0.1rem; }
+        #home .home_head .home_head_up .head_up_left .area, #classify .home_head .home_head_up .head_up_left .area {
+          margin-left: 0.05rem; }
+        #home .home_head .home_head_up .head_up_left .littleBorder, #classify .home_head .home_head_up .head_up_left .littleBorder {
+          border-right: 0.01rem solid #999; }
+        #home .home_head .home_head_up .head_up_left i, #classify .home_head .home_head_up .head_up_left i {
+          position: absolute;
+          top: 20px;
+          right: -6px;
+          border-width: 4px;
+          font-size: 0;
+          line-height: 0;
+          border-style: solid solid dotted;
+          border-color: #898989 transparent transparent; }
+      #home .home_head .home_head_up .head_up_center, #classify .home_head .home_head_up .head_up_center {
+        float: left;
+        margin-left: 0.13rem;
+        position: relative; }
+        #home .home_head .home_head_up .head_up_center input, #classify .home_head .home_head_up .head_up_center input {
+          line-height: 0.25rem;
+          height: 0.25rem;
+          width: 2.34rem;
+          background: #eee;
+          border: 0;
+          text-indent: 0.1rem;
+          border-radius: 0.05rem; }
+        #home .home_head .home_head_up .head_up_center span, #classify .home_head .home_head_up .head_up_center span {
+          display: inline-block;
+          width: 0.11rem;
+          height: 0.11rem;
+          background: url(https://static.epetbar.com/static_web/wap/dist/images/search.png) no-repeat;
+          background-size: contain;
+          position: absolute;
+          top: 0.15rem;
+          right: 0.06rem; }
+      #home .home_head .home_head_up .head_up_right, #classify .home_head .home_head_up .head_up_right {
+        float: left;
+        display: inline-block;
+        width: 0.25rem;
+        height: 0.25rem;
+        background: url(https://static.epetbar.com/static_web/wap/src/images/mydope.png) no-repeat;
+        background-size: contain;
+        margin-top: 0.08rem;
+        margin-left: 0.1rem; }
+    #home .home_head .home_head_down, #classify .home_head .home_head_down {
+      width: 100%;
+      height: 0.36rem;
+      line-height: 0.36rem; }
+      #home .home_head .home_head_down ul, #classify .home_head .home_head_down ul {
+        width: 100%;
+        display: flex; }
+        #home .home_head .home_head_down ul li, #classify .home_head .home_head_down ul li {
+          list-style: none;
+          height: 100%;
+          flex: 1; }
+          #home .home_head .home_head_down ul li a, #classify .home_head .home_head_down ul li a {
+            text-decoration: none;
+            color: #333; }
+  #home .home_foot ul, #classify .home_foot ul {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #ff0;
+    display: flex; }
+    #home .home_foot ul li, #classify .home_foot ul li {
+      list-style: none;
+      width: 25%;
+      height: 0.55rem; }
+      #home .home_foot ul li a, #classify .home_foot ul li a {
+        height: 0.4rem;
+        width: 0.42rem;
+        display: inline-block;
+        margin-top: 0.1rem;
+        margin-left: 0.2rem; }
+      #home .home_foot ul li .foot_home, #classify .home_foot ul li .foot_home {
+        background: url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat 0px 0px;
+        background-size: 2.34rem 1.63rem; }
+      #home .home_foot ul li .foot_classify, #classify .home_foot ul li .foot_classify {
+        background: url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -85px -41px;
+        background-size: 2.34rem 1.63rem; }
+      #home .home_foot ul li .foot_cart, #classify .home_foot ul li .foot_cart {
+        background: url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -85px -81px;
+        background-size: 2.34rem 1.63rem; }
+      #home .home_foot ul li .foot_my, #classify .home_foot ul li .foot_my {
+        background: url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -85px -122px;
+        background-size: 2.34rem 1.63rem; }
+
+.mark {
+  background: #f60; }
+
+.head_border {
+  border-bottom: 0.02rem solid #0f0; }
