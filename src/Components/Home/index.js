@@ -24,7 +24,7 @@ class Home extends Component{
 							<i></i>
 						</div>
 						<div className="head_up_center">
-							<input type="text" value="搜索商品和品牌" />
+							<input type="text" />
 							<span></span>
 						</div>
 						<span className="head_up_right"></span>
