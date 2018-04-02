@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
 import './index.css';
+import {
+	NavLink
+} from 'react-router-dom'
+import axios from 'axios'
+import checkSession from './auth.js'
+import store from '../../Redux'
 
 class Login extends Component{
 	constructor(props) {
@@ -13,7 +19,7 @@ class Login extends Component{
 					<a className="back" href="javascript:;">
 					</a>
 					<div className="register">
-						<a>注册</a>
+						<NavLink to="/register">注册</NavLink>
 					</div>
 				</h1>
 				<h2>
@@ -26,15 +32,15 @@ class Login extends Component{
 			</header>
 			<div className="content">
 				<ul className="mform">
-					<li><input type="text" placeholder="手机/邮箱/用户名"/></li>
-					<li><input type="password" placeholder="输入密码"/></li>
+					<li><input type="text" placeholder="手机/邮箱/用户名" ref="username"/></li>
+					<li><input type="password" placeholder="输入密码" ref="password"/></li>
 				</ul>
 			</div>
 			<div className="forgetPW">
 				忘记密码?
 			</div>
 			<div className="loginBtn">
-				<a href="javascript:;">登&nbsp;&nbsp;录</a>
+				<a href="javascript:;" onClick={this.handleClick.bind(this)}>登&nbsp;&nbsp;录</a>
 			</div>
 			<div className="otherLogin">
 				<p>合作网站登录</p>
@@ -45,6 +51,25 @@ class Login extends Component{
 			</div>
 
 		</div>
+	}
+	handleClick(){
+		axios.post("/login",{
+			username:this.refs.username.value,
+			password:this.refs.password.value
+		}).then(res=>{
+			// console.log(res.data);
+			if(res.data.status == 1){
+				checkSession.setLoginStatus(true);
+				this.props.history.push("/my")
+			}
+		})
+		function actionCreator(){
+			return {
+				type:'changeUser',
+				payload:'wangleo'
+			}
+		}
+		store.dispatch(actionCreator())
 	}
 }
 

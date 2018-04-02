@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import store from '../../Redux'
 
 class My extends Component{
 	constructor(props) {
@@ -7,8 +8,14 @@ class My extends Component{
 	}
 	render(){
 		return <div>
-			My
+		<p>my</p>
 		</div>
+	}
+	componentDidMount(){
+		console.log('11111111111111')
+		store.subscribe(() =>{
+			console.log("接收了消息",store.getState())
+		})
 	}
 }
 

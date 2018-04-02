@@ -1,5 +1,5 @@
 import {
-	HashRouter as Router,
+	BrowserRouter as Router,
 	Route,
 	Switch,
 	Redirect
@@ -11,6 +11,8 @@ import Cart from '../Components/Cart/index.js'
 import Classify from '../Components/Classify/index.js'
 import My from '../Components/My/index.js'
 import Login from '../Components/Login/index.js'
+import Register from '../Components/Register/index.js'
+import RegInfo from '../Components/RegInfo/index.js'
 import checkSession from '../Components/Login/auth.js'
 
 const router = (
@@ -22,9 +24,11 @@ const router = (
 				<Route path="/cart" component={Cart}/>
 				<Route path="/my" render={(props)=>{
 					console.log(props)
-					return checkSession.loginStatus?<My/>:<Login/>
+					return checkSession.getLoginStatus()?<My/>:<Login {...props}/>
 				}}/>
 				<Route path="/login" component={Login}/>
+				<Route path="/register" component={Register}/>
+				<Route path="/reginfo" component={RegInfo}/>
 				<Redirect from="*" to="/home" />
 			</Switch>
 		</App>

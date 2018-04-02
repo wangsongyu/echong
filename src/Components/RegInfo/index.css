@@ -1,0 +1,57 @@
+#reginfo ul li {
+  width: 100%;
+  padding-left: 16px;
+  height: 0.5rem;
+  box-sizing: border-box; }
+  #reginfo ul li p {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid #e2e2e2;
+    box-sizing: border-box;
+    padding: 10px 0px 10px 25px;
+    background: url(https://static.epetbar.com/mpet/images/login/ico1.png) no-repeat left center;
+    background-size: 10px 17px; }
+    #reginfo ul li p input {
+      width: 100%;
+      height: 100%;
+      border: 0px;
+      outline: none; }
+    #reginfo ul li p input::-webkit-input-placeholder {
+      color: #b8b8b8; }
+    #reginfo ul li p input::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: #b8b8b8; }
+    #reginfo ul li p input:-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: #b8b8b8; }
+    #reginfo ul li p input:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #b8b8b8; }
+
+#reginfo ul li:nth-of-type(2) p {
+  background: url(https://static.epetbar.com/mpet/images/ico3.png) no-repeat left center;
+  background-size: 14px 17px; }
+
+#reginfo ul li:nth-of-type(3) p {
+  background: url(https://static.epetbar.com/mpet/images/ico4.png) no-repeat left center;
+  background-size: 14px 17px; }
+
+#reginfo ul li:nth-of-type(4) p {
+  background: url(https://static.epetbar.com/mpet/images/ico4.png) no-repeat left center;
+  background-size: 14px 17px; }
+
+#reginfo .next {
+  width: 100%;
+  height: 0.3rem;
+  box-sizing: border-box;
+  padding: 0px 40px;
+  margin-top: 50px; }
+  #reginfo .next a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #d7d7d7;
+    border-radius: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: white; }
