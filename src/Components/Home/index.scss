@@ -1,16 +1,15 @@
 #home,#classify{
 	width:100%;
 	height:100%;
-	.downloadApp{
-		img{
-			width:100%;
-		}
-	}
 	.home_head{
+		width:100%;
+		background:#fff;
+		z-index:10;
 		position:fixed;
-		top:0.55rem;
+		top:0;
+		left:0;
 		.home_head_up{
-			margin-top:0.08rem;
+			margin-top:0.06rem;
 			width:100%;
 			height:0.4rem;
 			line-height:0.4rem;
@@ -21,6 +20,7 @@
 					font-size:14px;
 					display:inline-block;
 					margin-right:0.05rem;
+					color:#898989;
 					
 				}
 				.dogdog{
@@ -82,33 +82,102 @@
 			width:100%;
 			height:0.36rem;
 			line-height:0.36rem;
+			font-size:14px;
+			margin-top:0.05rem;
 			ul{
-				width:100%;
+				width:150%;
+				margin-left:-0.15rem;
 				display:flex;
+				overflow:hidden;
 				li{
 					list-style:none;
 					height:100%;
 					flex:1;
 					a{
+						display:block;
+						text-align:center;
 						text-decoration: none;
 						color:#333;
+						span{
+							border-bottom:1px solid #63ac57;
+							margin-left:0.25rem;
+						}
 					}
 				}
 			}
 		}
 	}
-	.home_foot{
+	.home_banner{
+		margin-top:0.87rem;
+		width:100%;
+		height:1.6rem;
+		img{
+			width:100%;
+		}
+	}
+	.columnNav{
+		width:100%;
+		height:1.8rem;
+		background:#ff0;
 		ul{
 			width:100%;
-			position:fixed;
-			bottom:0;
-			left:0;
+			height:100%;
+			display:flex;
+			flex-wrap:wrap;
+			li{
+				width:20%;
+				height:50%;
+				list-style:none;
+				img{
+					width:100%;
+					height:100%;
+				}
+			}
+		}
+	}
+	.newPeople{
+		width:100%;
+		height:1.2rem;
+		img{
+			width:100%;
+		}
+	}
+	.surprise{
+		width:100%;
+		height:1.7rem;
+		background:#ff0;
+		.up{
+			width:100%;
+			height:0.39rem;
+			.left{
+				img{
+					width:0.85rem;
+					height:0.19rem;
+				}
+			}
+			.right{
+
+			}
+		}
+		.down{
+
+		}
+	}
+	.home_foot{
+		height:0.55rem;
+		width:100%;
+		position:fixed;
+		bottom:0;
+		left:0;
+		ul{
+			width:100%;
+			height:100%;
 			background:#ff0;
 			display:flex;
 			li{
 				list-style:none;
 				width:25%;
-				height:0.55rem;
+				height:100%;
 				a{
 					height:0.4rem;
 					width:0.42rem;
@@ -125,11 +194,11 @@
 					background-size:2.34rem 1.63rem;
 				}
 				.foot_cart{
-					background:url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -85px -81px;
+					background:url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -85px -82px;
 					background-size:2.34rem 1.63rem;
 				}
 				.foot_my{
-					background:url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -85px -122px;
+					background:url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -87px -124px;
 					background-size:2.34rem 1.63rem;
 				}
 
