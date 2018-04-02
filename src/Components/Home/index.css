@@ -1,13 +1,15 @@
 #home, #classify {
   width: 100%;
   height: 100%; }
-  #home .downloadApp img, #classify .downloadApp img {
-    width: 100%; }
   #home .home_head, #classify .home_head {
+    width: 100%;
+    background: #fff;
+    z-index: 10;
     position: fixed;
-    top: 0.55rem; }
+    top: 0;
+    left: 0; }
     #home .home_head .home_head_up, #classify .home_head .home_head_up {
-      margin-top: 0.08rem;
+      margin-top: 0.06rem;
       width: 100%;
       height: 0.4rem;
       line-height: 0.4rem; }
@@ -17,7 +19,8 @@
         #home .home_head .home_head_up .head_up_left a, #classify .home_head .home_head_up .head_up_left a {
           font-size: 14px;
           display: inline-block;
-          margin-right: 0.05rem; }
+          margin-right: 0.05rem;
+          color: #898989; }
         #home .home_head .home_head_up .head_up_left .dogdog, #classify .home_head .home_head_up .head_up_left .dogdog {
           margin-left: 0.1rem; }
         #home .home_head .home_head_up .head_up_left .area, #classify .home_head .home_head_up .head_up_left .area {
@@ -66,46 +69,96 @@
     #home .home_head .home_head_down, #classify .home_head .home_head_down {
       width: 100%;
       height: 0.36rem;
-      line-height: 0.36rem; }
+      line-height: 0.36rem;
+      font-size: 14px;
+      margin-top: 0.05rem; }
       #home .home_head .home_head_down ul, #classify .home_head .home_head_down ul {
-        width: 100%;
-        display: flex; }
+        width: 150%;
+        margin-left: -0.15rem;
+        display: flex;
+        overflow: hidden; }
         #home .home_head .home_head_down ul li, #classify .home_head .home_head_down ul li {
           list-style: none;
           height: 100%;
           flex: 1; }
           #home .home_head .home_head_down ul li a, #classify .home_head .home_head_down ul li a {
+            display: block;
+            text-align: center;
             text-decoration: none;
             color: #333; }
-  #home .home_foot ul, #classify .home_foot ul {
+            #home .home_head .home_head_down ul li a span, #classify .home_head .home_head_down ul li a span {
+              border-bottom: 1px solid #63ac57;
+              margin-left: 0.25rem; }
+  #home .home_banner, #classify .home_banner {
+    margin-top: 0.87rem;
+    width: 100%;
+    height: 1.6rem; }
+    #home .home_banner img, #classify .home_banner img {
+      width: 100%; }
+  #home .columnNav, #classify .columnNav {
+    width: 100%;
+    height: 1.8rem;
+    background: #ff0; }
+    #home .columnNav ul, #classify .columnNav ul {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-wrap: wrap; }
+      #home .columnNav ul li, #classify .columnNav ul li {
+        width: 20%;
+        height: 50%;
+        list-style: none; }
+        #home .columnNav ul li img, #classify .columnNav ul li img {
+          width: 100%;
+          height: 100%; }
+  #home .newPeople, #classify .newPeople {
+    width: 100%;
+    height: 1.2rem; }
+    #home .newPeople img, #classify .newPeople img {
+      width: 100%; }
+  #home .surprise, #classify .surprise {
+    width: 100%;
+    height: 1.7rem;
+    background: #ff0; }
+    #home .surprise .up, #classify .surprise .up {
+      width: 100%;
+      height: 0.39rem; }
+      #home .surprise .up .left img, #classify .surprise .up .left img {
+        width: 0.85rem;
+        height: 0.19rem; }
+  #home .home_foot, #classify .home_foot {
+    height: 0.55rem;
     width: 100%;
     position: fixed;
     bottom: 0;
-    left: 0;
-    background: #ff0;
-    display: flex; }
-    #home .home_foot ul li, #classify .home_foot ul li {
-      list-style: none;
-      width: 25%;
-      height: 0.55rem; }
-      #home .home_foot ul li a, #classify .home_foot ul li a {
-        height: 0.4rem;
-        width: 0.42rem;
-        display: inline-block;
-        margin-top: 0.1rem;
-        margin-left: 0.2rem; }
-      #home .home_foot ul li .foot_home, #classify .home_foot ul li .foot_home {
-        background: url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat 0px 0px;
-        background-size: 2.34rem 1.63rem; }
-      #home .home_foot ul li .foot_classify, #classify .home_foot ul li .foot_classify {
-        background: url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -85px -41px;
-        background-size: 2.34rem 1.63rem; }
-      #home .home_foot ul li .foot_cart, #classify .home_foot ul li .foot_cart {
-        background: url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -85px -81px;
-        background-size: 2.34rem 1.63rem; }
-      #home .home_foot ul li .foot_my, #classify .home_foot ul li .foot_my {
-        background: url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -85px -122px;
-        background-size: 2.34rem 1.63rem; }
+    left: 0; }
+    #home .home_foot ul, #classify .home_foot ul {
+      width: 100%;
+      height: 100%;
+      background: #ff0;
+      display: flex; }
+      #home .home_foot ul li, #classify .home_foot ul li {
+        list-style: none;
+        width: 25%;
+        height: 100%; }
+        #home .home_foot ul li a, #classify .home_foot ul li a {
+          height: 0.4rem;
+          width: 0.42rem;
+          display: inline-block;
+          margin-top: 0.1rem;
+          margin-left: 0.2rem; }
+        #home .home_foot ul li .foot_home, #classify .home_foot ul li .foot_home {
+          background: url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat 0px 0px;
+          background-size: 2.34rem 1.63rem; }
+        #home .home_foot ul li .foot_classify, #classify .home_foot ul li .foot_classify {
+          background: url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -85px -41px;
+          background-size: 2.34rem 1.63rem; }
+        #home .home_foot ul li .foot_cart, #classify .home_foot ul li .foot_cart {
+          background: url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -85px -82px;
+          background-size: 2.34rem 1.63rem; }
+        #home .home_foot ul li .foot_my, #classify .home_foot ul li .foot_my {
+          background: url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -87px -124px;
+          background-size: 2.34rem 1.63rem; }
 
 .mark {
   background: #f60; }
