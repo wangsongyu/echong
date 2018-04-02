@@ -1,13 +1,13 @@
 #home, #classify {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background: #f3f4f5; }
   #home .home_head, #classify .home_head {
-    width: 100%;
-    background: #fff;
     z-index: 10;
     position: fixed;
-    top: 0;
-    left: 0; }
+    width: 100%;
+    background: #fff;
+    top: 0; }
     #home .home_head .home_head_up, #classify .home_head .home_head_up {
       margin-top: 0.06rem;
       width: 100%;
@@ -71,30 +71,16 @@
       height: 0.36rem;
       line-height: 0.36rem;
       font-size: 14px;
-      margin-top: 0.05rem; }
-      #home .home_head .home_head_down ul, #classify .home_head .home_head_down ul {
-        width: 150%;
-        margin-left: -0.15rem;
-        display: flex;
-        overflow: hidden; }
-        #home .home_head .home_head_down ul li, #classify .home_head .home_head_down ul li {
-          list-style: none;
-          height: 100%;
-          flex: 1; }
-          #home .home_head .home_head_down ul li a, #classify .home_head .home_head_down ul li a {
-            display: block;
-            text-align: center;
-            text-decoration: none;
-            color: #333; }
-            #home .home_head .home_head_down ul li a span, #classify .home_head .home_head_down ul li a span {
-              border-bottom: 1px solid #63ac57;
-              margin-left: 0.25rem; }
+      margin-top: 0.05rem;
+      overflow: hidden; }
   #home .home_banner, #classify .home_banner {
     margin-top: 0.87rem;
     width: 100%;
     height: 1.6rem; }
     #home .home_banner img, #classify .home_banner img {
       width: 100%; }
+  #home .home_mengzhua, #classify .home_mengzhua {
+    margin-top: 0; }
   #home .columnNav, #classify .columnNav {
     width: 100%;
     height: 1.8rem;
@@ -117,16 +103,176 @@
     #home .newPeople img, #classify .newPeople img {
       width: 100%; }
   #home .surprise, #classify .surprise {
+    background: #fff;
     width: 100%;
     height: 1.7rem;
-    background: #ff0; }
+    margin-bottom: 0.1rem; }
     #home .surprise .up, #classify .surprise .up {
-      width: 100%;
-      height: 0.39rem; }
+      width: 98%;
+      height: 0.19rem; }
       #home .surprise .up .left img, #classify .surprise .up .left img {
+        float: left;
         width: 0.85rem;
         height: 0.19rem; }
+      #home .surprise .up .left .session, #classify .surprise .up .left .session {
+        float: left; }
+      #home .surprise .up .left .more, #classify .surprise .up .left .more {
+        display: inline-block;
+        width: 0.67rem;
+        height: 0.34rem;
+        float: right; }
+        #home .surprise .up .left .more img, #classify .surprise .up .left .more img {
+          width: 100%;
+          height: 100%; }
+    #home .surprise .down, #classify .surprise .down {
+      width: 100%;
+      height: 1.3rem;
+      overflow: hidden; }
+      #home .surprise .down ul, #classify .surprise .down ul {
+        height: 100%;
+        overflow: hidden; }
+        #home .surprise .down ul li, #classify .surprise .down ul li {
+          float: left;
+          margin: 0 0.3rem; }
+          #home .surprise .down ul li img, #classify .surprise .down ul li img {
+            width: 0.845rem;
+            height: 0.845rem; }
+  #home .home_zone, #classify .home_zone {
+    width: 100%;
+    height: 2.5rem;
+    display: flex; }
+    #home .home_zone .left, #classify .home_zone .left {
+      flex: 1;
+      width: 50%; }
+      #home .home_zone .left img, #classify .home_zone .left img {
+        width: 100%;
+        height: 100%; }
+    #home .home_zone .right, #classify .home_zone .right {
+      flex: 1;
+      width: 50%; }
+      #home .home_zone .right div, #classify .home_zone .right div {
+        width: 100%;
+        height: 50%; }
+        #home .home_zone .right div img, #classify .home_zone .right div img {
+          width: 100%;
+          height: 100%; }
+  #home .con1, #classify .con1 {
+    width: 100%;
+    height: 1.6rem;
+    margin-top: 0.1rem; }
+    #home .con1 img, #classify .con1 img {
+      width: 100%;
+      height: 100%; }
+  #home .chaopin, #classify .chaopin {
+    margin-top: 0.1rem;
+    width: 100%;
+    height: 0.87rem;
+    background: #fff; }
+    #home .chaopin div, #classify .chaopin div {
+      float: left;
+      width: 1.87rem;
+      height: 0.72rem;
+      margin-top: 0.05rem;
+      margin-left: 0.1rem; }
+      #home .chaopin div img, #classify .chaopin div img {
+        width: 100%;
+        height: 100%; }
+    #home .chaopin a, #classify .chaopin a {
+      float: right;
+      display: inline-block;
+      width: 0.6rem;
+      height: 0.55rem;
+      margin-top: 0.15rem; }
+      #home .chaopin a img, #classify .chaopin a img {
+        width: 100%;
+        height: 100%; }
+  #home .video, #classify .video {
+    background: #fff;
+    width: 100%;
+    height: 2.7rem; }
+    #home .video .video_head, #classify .video .video_head {
+      width: 100%;
+      height: 2.11rem; }
+      #home .video .video_head img, #classify .video .video_head img {
+        width: 100%; }
+    #home .video .videoContent, #classify .video .videoContent {
+      padding: 0.1rem;
+      font-size: 12px; }
+      #home .video .videoContent .videoTitle, #classify .video .videoContent .videoTitle {
+        height: 0.19rem;
+        text-align: center; }
+      #home .video .videoContent .down, #classify .video .videoContent .down {
+        color: #999;
+        height: 0.19rem;
+        text-align: center; }
+        #home .video .videoContent .down p, #classify .video .videoContent .down p {
+          display: inline-block; }
+        #home .video .videoContent .down .left, #classify .video .videoContent .down .left {
+          margin-right: 0.1rem; }
+          #home .video .videoContent .down .left span, #classify .video .videoContent .down .left span {
+            display: inline-block;
+            width: 0.15rem;
+            height: 0.11rem; }
+            #home .video .videoContent .down .left span img, #classify .video .videoContent .down .left span img {
+              width: 100%;
+              height: 100%; }
+        #home .video .videoContent .down .right span, #classify .video .videoContent .down .right span {
+          display: inline-block;
+          width: 0.01rem;
+          height: 0.12rem;
+          background: #999;
+          margin-right: 0.1rem; }
+  #home .fourCon, #classify .fourCon {
+    margin-top: 0.1rem;
+    width: 100%;
+    height: 2rem; }
+    #home .fourCon .left, #classify .fourCon .left {
+      float: left;
+      width: 50%;
+      height: 100%; }
+      #home .fourCon .left div, #classify .fourCon .left div {
+        height: 50%;
+        width: 100%; }
+        #home .fourCon .left div img, #classify .fourCon .left div img {
+          width: 100%;
+          height: 100%; }
+    #home .fourCon .right, #classify .fourCon .right {
+      float: left;
+      width: 50%;
+      height: 100%; }
+      #home .fourCon .right div, #classify .fourCon .right div {
+        height: 50%;
+        width: 100%; }
+        #home .fourCon .right div img, #classify .fourCon .right div img {
+          width: 100%;
+          height: 100%; }
+  #home .line, #classify .line {
+    margin-top: 0.1rem;
+    width: 100%;
+    height: 0.3rem; }
+    #home .line img, #classify .line img {
+      width: 100%; }
+  #home .home_our, #classify .home_our {
+    margin-bottom: 0.55rem;
+    width: 100%;
+    height: 0.86rem;
+    background: #fff;
+    font-size: 14px; }
+    #home .home_our ul, #classify .home_our ul {
+      padding-top: 0.3rem;
+      text-align: center; }
+      #home .home_our ul li, #classify .home_our ul li {
+        display: inline-block;
+        margin-right: 0.15rem; }
+        #home .home_our ul li a, #classify .home_our ul li a {
+          display: block; }
+    #home .home_our .down, #classify .home_our .down {
+      font-size: 12px;
+      text-align: center;
+      margin-top: 0.06rem; }
   #home .home_foot, #classify .home_foot {
+    background: #fff;
+    z-index: 10;
     height: 0.55rem;
     width: 100%;
     position: fixed;
@@ -135,7 +281,6 @@
     #home .home_foot ul, #classify .home_foot ul {
       width: 100%;
       height: 100%;
-      background: #ff0;
       display: flex; }
       #home .home_foot ul li, #classify .home_foot ul li {
         list-style: none;

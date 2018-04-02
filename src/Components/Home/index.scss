@@ -1,13 +1,13 @@
 #home,#classify{
 	width:100%;
 	height:100%;
+	background:#f3f4f5;
 	.home_head{
-		width:100%;
-		background:#fff;
 		z-index:10;
 		position:fixed;
+		width:100%;
+		background:#fff;
 		top:0;
-		left:0;
 		.home_head_up{
 			margin-top:0.06rem;
 			width:100%;
@@ -84,27 +84,7 @@
 			line-height:0.36rem;
 			font-size:14px;
 			margin-top:0.05rem;
-			ul{
-				width:150%;
-				margin-left:-0.15rem;
-				display:flex;
-				overflow:hidden;
-				li{
-					list-style:none;
-					height:100%;
-					flex:1;
-					a{
-						display:block;
-						text-align:center;
-						text-decoration: none;
-						color:#333;
-						span{
-							border-bottom:1px solid #63ac57;
-							margin-left:0.25rem;
-						}
-					}
-				}
-			}
+			overflow:hidden;
 		}
 	}
 	.home_banner{
@@ -114,6 +94,9 @@
 		img{
 			width:100%;
 		}
+	}
+	.home_mengzhua{
+		margin-top:0;
 	}
 	.columnNav{
 		width:100%;
@@ -143,16 +126,31 @@
 		}
 	}
 	.surprise{
+		background:#fff;
 		width:100%;
 		height:1.7rem;
-		background:#ff0;
+		margin-bottom:0.1rem;
 		.up{
-			width:100%;
-			height:0.39rem;
+			width:98%;
+			height:0.19rem;
 			.left{
 				img{
+					float:left;
 					width:0.85rem;
 					height:0.19rem;
+				}
+				.session{
+					float:left;
+				}
+				.more{
+					display:inline-block;
+					width:0.67rem;
+					height:0.34rem;
+					float:right;
+					img{
+						width:100%;
+						height:100%;
+					}
 				}
 			}
 			.right{
@@ -160,10 +158,200 @@
 			}
 		}
 		.down{
-
+			width:100%;
+			height:1.3rem;
+			overflow:hidden;
+			ul{
+				height:100%;
+				overflow:hidden;
+				li{
+					float:left;
+					margin:0 0.3rem;
+					img{
+						width:0.845rem;
+						height:0.845rem;
+					}
+				}
+			}
+		}
+	}
+	.home_zone{
+		width:100%;
+		height:2.5rem;
+		display:flex;
+		.left{
+			flex:1;
+			width:50%;
+			img{
+				width:100%;
+				height:100%;
+			}
+		}
+		.right{
+			flex:1;
+			width:50%;
+			div{
+				width:100%;
+				height:50%;
+				img{
+					width:100%;
+					height:100%;
+				}
+			}
+		}
+	}
+	.con1{
+		width:100%;
+		height:1.6rem;
+		margin-top:0.1rem;
+		img{
+			width:100%;
+			height:100%;
+		}
+	}
+	.chaopin{
+		margin-top:0.1rem;
+		width:100%;
+		height:0.87rem;
+		background:#fff;
+		div{
+			float:left;
+			width:1.87rem;
+			height:0.72rem;
+			margin-top:0.05rem;
+			margin-left:0.1rem;
+			img{
+				width:100%;
+				height:100%;
+			}
+		}
+		a{
+			float:right;
+			display:inline-block;
+			width:0.6rem;
+			height:0.55rem;
+			margin-top:0.15rem;
+			img{
+				width:100%;
+				height:100%;
+			}
+		}
+		
+	}
+	.video{
+		background:#fff;
+		width:100%;
+		height:2.7rem;
+		.video_head{
+			width:100%;
+			height:2.11rem;
+			img{
+				width:100%;
+			}
+		}
+		.videoContent{
+			padding:0.1rem;
+			font-size:12px;
+			.videoTitle{
+				height:0.19rem;
+				text-align:center;
+			}
+			.down{
+				color:#999;
+				height:0.19rem;
+				text-align:center;
+				p{
+					display:inline-block;
+				}
+				.left{
+					margin-right:0.1rem;
+					span{
+						display:inline-block;
+						width:0.15rem;
+						height:0.11rem;
+						img{
+							width:100%;
+							height:100%;
+						}
+					}
+				}
+				.right{
+					span{
+						display:inline-block;
+						width:0.01rem;
+						height:0.12rem;
+						background:#999;
+						margin-right:0.1rem;
+					}
+				}
+			}
+		}
+	}
+	.fourCon{
+		margin-top:0.1rem;
+		width:100%;
+		height:2rem;
+		.left{
+			float:left;
+			width:50%;
+			height:100%;
+			div{
+				height:50%;
+				width:100%;
+				img{
+					width:100%;
+					height:100%;
+				}
+			}
+		}
+		.right{
+			float:left;
+			width:50%;
+			height:100%;
+			div{
+				height:50%;
+				width:100%;
+				img{
+					width:100%;
+					height:100%;
+				}
+			}
+		}
+	}
+	.line{
+		margin-top:0.1rem;
+		width:100%;
+		height:0.3rem;
+		img{
+			width:100%;
+		}
+	}
+	.home_our{
+		margin-bottom:0.55rem;
+		width:100%;
+		height:0.86rem;
+		background:#fff;
+		font-size:14px;
+		ul{
+			padding-top:0.3rem;
+			text-align:center;
+			li{
+				display:inline-block;
+				margin-right:0.15rem;
+				a{
+					display:block;
+				}
+			}
+		}
+		.down{
+			font-size:12px;
+			text-align:center;
+			margin-top:0.06rem;
 		}
 	}
 	.home_foot{
+		background:#fff;
+		z-index:10;
 		height:0.55rem;
 		width:100%;
 		position:fixed;
@@ -172,7 +360,6 @@
 		ul{
 			width:100%;
 			height:100%;
-			background:#ff0;
 			display:flex;
 			li{
 				list-style:none;
