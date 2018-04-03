@@ -1,22 +1,25 @@
 import React, { Component } from 'react';
-import store from '../../Redux'
+
 
 class My extends Component{
 	constructor(props) {
 		super(props);
+		this.state={
+			username:'my'
+		}
 		
 	}
 	render(){
 		return <div>
-		<p>my</p>
+		<p>{this.state.username}</p>
 		</div>
 	}
-	componentDidMount(){
-		console.log('11111111111111')
-		store.subscribe(() =>{
-			console.log("接收了消息",store.getState())
+	componentWillMount(){
+		this.setState({
+			username:document.cookie.split('=')[1]
 		})
 	}
+	
 }
 
 export default My

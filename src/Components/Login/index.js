@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom'
 import axios from 'axios'
 import checkSession from './auth.js'
-import store from '../../Redux'
+
 
 class Login extends Component{
 	constructor(props) {
@@ -57,19 +57,14 @@ class Login extends Component{
 			username:this.refs.username.value,
 			password:this.refs.password.value
 		}).then(res=>{
-			// console.log(res.data);
+			console.log(res.data);
 			if(res.data.status == 1){
+				document.cookie = 'username='+res.data.username;
 				checkSession.setLoginStatus(true);
 				this.props.history.push("/my")
 			}
 		})
-		function actionCreator(){
-			return {
-				type:'changeUser',
-				payload:'wangleo'
-			}
-		}
-		store.dispatch(actionCreator())
+		
 	}
 }
 

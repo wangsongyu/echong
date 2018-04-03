@@ -23,7 +23,7 @@ const router = (
 				<Route path="/classify" component={Classify}/>
 				<Route path="/cart" component={Cart}/>
 				<Route path="/my" render={(props)=>{
-					console.log(props)
+			
 					return checkSession.getLoginStatus()?<My/>:<Login {...props}/>
 				}}/>
 				<Route path="/login" component={Login}/>
