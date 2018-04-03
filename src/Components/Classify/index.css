@@ -9,17 +9,19 @@
 .classify_mark {
   border-bottom: 2px solid #ed4044;
   color: #ed4044;
-  padding-bottom: 0.08rem; }
+  padding-bottom: 0.1rem; }
 
 #classify .classify_head {
   box-sizing: border-box;
   height: 0.4rem;
   line-height: 0.4rem;
   width: 100%;
-  background: #ff0;
+  background: #fff;
   display: flex;
   border-bottom: 0.01rem solid #cbcbcb; }
   #classify .classify_head div {
+    font-weight: bold;
+    font-size: 13px;
     width: 50%;
     height: 100%; }
   #classify .classify_head .left {

@@ -52,7 +52,8 @@
             width: 100%;
             height: 0.2rem;
             text-align: center;
-            margin-top: 0.05rem; }
+            margin-top: 0.05rem;
+            overflow: hidden; }
           #Brands .brand_box .brand_content .image_list li span {
             display: inline-block;
             font-size: 12px;
@@ -60,3 +61,5 @@
             width: 100%;
             height: 0.2rem;
             text-align: center; }
+  #Brands .last_brand_box {
+    padding-bottom: 0.7rem; }

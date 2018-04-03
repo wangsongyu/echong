@@ -62,6 +62,7 @@
 						height:0.2rem;
 						text-align:center;
 						margin-top:0.05rem;
+						overflow:hidden;
 					}
 					span{
 						display:inline-block;
@@ -76,5 +77,8 @@
 				
 			}
 		}
+	}
+	.last_brand_box{
+		padding-bottom:0.7rem;
 	}
 }

@@ -5,7 +5,7 @@ import './index.css'
 class Brands extends Component{
 	constructor(props) {
 		super(props);
-		this.state={
+		this.state={ 
 			con0:null,
 			con1:null,
 			con2:null,
@@ -30,9 +30,6 @@ class Brands extends Component{
 							<p>{this.state.con0.title}</p>
 							<span className="span_r"></span>
 						</div>:null
-						
-
-						
 					}					
 					</div>
 					<div className="brand_content">
@@ -42,7 +39,239 @@ class Brands extends Component{
 
 									return  <li>
 												<div>
-													<img src={item.logo} />
+													<img key={item.brandid} src={item.logo} />
+												</div>
+												<p>{item.name}</p>
+												<span>{item.address}</span>
+											</li>
+								}):null
+							}	
+						</ul>
+					</div>
+				</div>
+				<div className="brand_box">
+					<div className="brand_title">
+					{
+						this.state.con1?
+						<div className="title_all">
+							<span className="span_l"></span>
+							<p>{this.state.con1.title}</p>
+							<span className="span_r"></span>
+						</div>:null
+						
+					}					
+					</div>
+					<div className="brand_content">
+						<ul className="image_list">
+							{
+								this.state.con1?this.state.con1.list.map(item=>{
+
+									return  <li>
+												<div>
+													<img key={item.brandid} src={item.logo} />
+												</div>
+												<p>{item.name}</p>
+												<span>{item.address}</span>
+											</li>
+								}):null
+							}	
+						</ul>
+					</div>
+				</div>
+				<div className="brand_box">
+					<div className="brand_title">
+					{
+						this.state.con2?
+						<div className="title_all">
+							<span className="span_l"></span>
+							<p>{this.state.con2.title}</p>
+							<span className="span_r"></span>
+						</div>:null
+						
+					}					
+					</div>
+					<div className="brand_content">
+						<ul className="image_list">
+							{
+								this.state.con2?this.state.con2.list.map(item=>{
+
+									return  <li>
+												<div>
+													<img key={item.brandid} src={item.logo} />
+												</div>
+												<p>{item.name}</p>
+												<span>{item.address}</span>
+											</li>
+								}):null
+							}	
+						</ul>
+					</div>
+				</div>
+				<div className="brand_box">
+					<div className="brand_title">
+					{
+						this.state.con3?
+						<div className="title_all">
+							<span className="span_l"></span>
+							<p>{this.state.con3.title}</p>
+							<span className="span_r"></span>
+						</div>:null
+						
+					}					
+					</div>
+					<div className="brand_content">
+						<ul className="image_list">
+							{
+								this.state.con3?this.state.con3.list.map(item=>{
+
+									return  <li>
+												<div>
+													<img key={item.brandid} src={item.logo} />
+												</div>
+												<p>{item.name}</p>
+												<span>{item.address}</span>
+											</li>
+								}):null
+							}	
+						</ul>
+					</div>
+				</div>
+				<div className="brand_box">
+					<div className="brand_title">
+					{
+						this.state.con4?
+						<div className="title_all">
+							<span className="span_l"></span>
+							<p>{this.state.con4.title}</p>
+							<span className="span_r"></span>
+						</div>:null
+						
+					}					
+					</div>
+					<div className="brand_content">
+						<ul className="image_list">
+							{
+								this.state.con4?this.state.con4.list.map(item=>{
+
+									return  <li>
+												<div>
+													<img key={item.brandid} src={item.logo} />
+												</div>
+												<p>{item.name}</p>
+												<span>{item.address}</span>
+											</li>
+								}):null
+							}	
+						</ul>
+					</div>
+				</div>
+				<div className="brand_box">
+					<div className="brand_title">
+					{
+						this.state.con5?
+						<div className="title_all">
+							<span className="span_l"></span>
+							<p>{this.state.con5.title}</p>
+							<span className="span_r"></span>
+						</div>:null
+						
+					}					
+					</div>
+					<div className="brand_content">
+						<ul className="image_list">
+							{
+								this.state.con5?this.state.con5.list.map(item=>{
+
+									return  <li>
+												<div>
+													<img key={item.brandid} src={item.logo} />
+												</div>
+												<p>{item.name}</p>
+												<span>{item.address}</span>
+											</li>
+								}):null
+							}	
+						</ul>
+					</div>
+				</div>
+				<div className="brand_box">
+					<div className="brand_title">
+					{
+						this.state.con6?
+						<div className="title_all">
+							<span className="span_l"></span>
+							<p>{this.state.con6.title}</p>
+							<span className="span_r"></span>
+						</div>:null
+						
+					}					
+					</div>
+					<div className="brand_content">
+						<ul className="image_list">
+							{
+								this.state.con6?this.state.con6.list.map(item=>{
+
+									return  <li>
+												<div>
+													<img key={item.brandid} src={item.logo} />
+												</div>
+												<p>{item.name}</p>
+												<span>{item.address}</span>
+											</li>
+								}):null
+							}	
+						</ul>
+					</div>
+				</div>
+				<div className="brand_box">
+					<div className="brand_title">
+					{
+						this.state.con7?
+						<div className="title_all">
+							<span className="span_l"></span>
+							<p>{this.state.con7.title}</p>
+							<span className="span_r"></span>
+						</div>:null
+						
+					}					
+					</div>
+					<div className="brand_content">
+						<ul className="image_list">
+							{
+								this.state.con7?this.state.con7.list.map(item=>{
+
+									return  <li>
+												<div>
+													<img key={item.brandid} src={item.logo} />
+												</div>
+												<p>{item.name}</p>
+												<span>{item.address}</span>
+											</li>
+								}):null
+							}	
+						</ul>
+					</div>
+				</div>
+				<div className="brand_box last_brand_box">
+					<div className="brand_title">
+					{
+						this.state.con8?
+						<div className="title_all">
+							<span className="span_l"></span>
+							<p>{this.state.con8.title}</p>
+							<span className="span_r"></span>
+						</div>:null
+						
+					}					
+					</div>
+					<div className="brand_content">
+						<ul className="image_list">
+							{
+								this.state.con8?this.state.con8.list.map(item=>{
+
+									return  <li>
+												<div>
+													<img key={item.brandid} src={item.logo} />
 												</div>
 												<p>{item.name}</p>
 												<span>{item.address}</span>

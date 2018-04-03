@@ -1,0 +1,33 @@
+#Sort{
+	width:100%;
+	height:100%;
+	display:flex;
+	.SortAside{
+		position:fixed;
+		top:0.4rem;
+		width:20%;
+		border-right:5px solid #f3f4f5;
+		.asideList{
+			box-sizing:border-box;
+
+			li{
+				text-align:center;
+			    border-bottom:0.01rem solid #f3f4f5;
+			    width:0.7rem;
+			    height:0.5rem;
+			    line-height:0.5rem;
+			    font-size:0.13rem;
+			    text-overflow:ellipsis;
+			    white-space:nowrap;
+			    overflow:hidden;
+			    a{
+			    	display:block;
+			    }
+			}
+			
+		}
+	}
+	.SortZone{
+		
+	}
+}
