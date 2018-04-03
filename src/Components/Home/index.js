@@ -70,15 +70,14 @@ class Home extends Component{
 						<span className="head_up_right"></span>
 					</div>
 					<div className="home_head_down">
-						<ul className="list">
-						{
-
-							this.state.menulist.map(item=>{
-								return <li key={item.menu_id}>
-											<a>{item.menu_name}</a>
-										</li>
-							})
-						}
+						<ul className="list" ref="dragNav">
+							<li><NavLink to="/home">首页</NavLink></li>
+							<li><NavLink to="/home">狗狗主粮</NavLink></li>
+							<li><NavLink to="/home">服饰城</NavLink></li>
+							<li><NavLink to="/home">医疗保健</NavLink></li>
+							<li><NavLink to="/home">零食玩具</NavLink></li>
+							<li><NavLink to="/home">日用外出</NavLink></li>
+							<li><NavLink to="/home">美容香波</NavLink></li>
 						</ul>
 					</div>
 				</div>
@@ -397,6 +396,26 @@ class Home extends Component{
 
 			})
 		})
+		
+		var dragNav = this.refs.dragNav;
+		dragNav.ontouchstart = function(ev){
+			var disX = ev.touches[0].clientX - this.offsetLeft;
+			document.ontouchmove = function(ev){
+				var L = ev.touches[0].clientX - disX;
+					if(L>0){
+						L = 0;
+					}else if(L < -(dragNav.offsetWidth - dragNav.parentNode.offsetWidth)){
+						L = -(dragNav.offsetWidth - dragNav.parentNode.offsetWidth)
+					}
+
+					dragNav.style.left = L + 'px';
+
+				document.ontouchend = function(){
+					document.ontouchmove = null;
+					document.ontouchend = null;
+				}
+			}
+		}
 	}
 }
 

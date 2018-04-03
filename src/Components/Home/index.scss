@@ -85,15 +85,19 @@
 			font-size:14px;
 			margin-top:0.05rem;
 			overflow:hidden;
+			position:relative;
 			.list{
-				overflow:hidden;
+				// overflow:hidden;
+				position:absolute;
+				top:0px;
+				left:0px;
 				display:flex;
-				white-space: nowrap;display: flex;
+				width: 140%;
 				li{
 					flex:1;
 					height:0.36rem;
 					display:inline-block;
-					margin-left:0.25rem;
+					// margin-left:0.25rem;
 					a{
 						height:100%;
 						display:block;

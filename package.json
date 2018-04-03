@@ -10,10 +10,9 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1",
-<<<<<<< HEAD
+
     "react-swipe": "^5.1.1",
-=======
->>>>>>> 78b1a9ec1b0df63957f8cfa6de1fff473d40acf8
+
     "redux": "^3.7.2"
   },
   "scripts": {

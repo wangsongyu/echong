@@ -72,17 +72,18 @@
       line-height: 0.36rem;
       font-size: 14px;
       margin-top: 0.05rem;
-      overflow: hidden; }
+      overflow: hidden;
+      position: relative; }
       #home .home_head .home_head_down .list, #classify .home_head .home_head_down .list {
-        overflow: hidden;
+        position: absolute;
+        top: 0px;
+        left: 0px;
         display: flex;
-        white-space: nowrap;
-        display: flex; }
+        width: 140%; }
         #home .home_head .home_head_down .list li, #classify .home_head .home_head_down .list li {
           flex: 1;
           height: 0.36rem;
-          display: inline-block;
-          margin-left: 0.25rem; }
+          display: inline-block; }
           #home .home_head .home_head_down .list li a, #classify .home_head .home_head_down .list li a {
             height: 100%;
             display: block;
