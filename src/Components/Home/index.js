@@ -10,6 +10,7 @@ class Home extends Component{
 	constructor(props) {
 		super(props);
 		this.state={
+			menulist:[],
 			bannerlist:[],
 			mengzhualist:[],
 			newpeople:'',
@@ -69,7 +70,16 @@ class Home extends Component{
 						<span className="head_up_right"></span>
 					</div>
 					<div className="home_head_down">
-						
+						<ul className="list">
+						{
+
+							this.state.menulist.map(item=>{
+								return <li key={item.menu_id}>
+											<a>{item.menu_name}</a>
+										</li>
+							})
+						}
+						</ul>
 					</div>
 				</div>
 				<div className="home_banner">
@@ -351,8 +361,9 @@ class Home extends Component{
 
 		})
 		axios.get('/v3/index/main.html?pet_type=dog&version=358&is_single=0&system=wap&isWeb=1&_=1522634568975').then(res=>{
-			console.log(res.data.datas[39].value)
+			console.log(res.data.menus)
 			this.setState({
+				menulist:res.data.menus,
 				iconlist:res.data.datas[2].menus,
 				zoneRPic:res.data.datas[6].content_images[1],
 				zoneLPic:res.data.datas[6].content_images[0],

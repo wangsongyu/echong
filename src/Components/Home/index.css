@@ -73,6 +73,25 @@
       font-size: 14px;
       margin-top: 0.05rem;
       overflow: hidden; }
+      #home .home_head .home_head_down .list, #classify .home_head .home_head_down .list {
+        overflow: hidden;
+        display: flex;
+        white-space: nowrap;
+        display: flex; }
+        #home .home_head .home_head_down .list li, #classify .home_head .home_head_down .list li {
+          flex: 1;
+          height: 0.36rem;
+          display: inline-block;
+          margin-left: 0.25rem; }
+          #home .home_head .home_head_down .list li a, #classify .home_head .home_head_down .list li a {
+            height: 100%;
+            display: block;
+            color: #666;
+            text-align: center;
+            line-height: 36px;
+            font-size: 14px; }
+        #home .home_head .home_head_down .list li:nth-of-type(1) a, #classify .home_head .home_head_down .list li:nth-of-type(1) a {
+          color: #67af5b; }
   #home .home_banner, #classify .home_banner {
     margin-top: 0.87rem;
     width: 100%;

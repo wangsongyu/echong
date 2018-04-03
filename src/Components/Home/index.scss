@@ -85,6 +85,28 @@
 			font-size:14px;
 			margin-top:0.05rem;
 			overflow:hidden;
+			.list{
+				overflow:hidden;
+				display:flex;
+				white-space: nowrap;display: flex;
+				li{
+					flex:1;
+					height:0.36rem;
+					display:inline-block;
+					margin-left:0.25rem;
+					a{
+						height:100%;
+						display:block;
+						color:#666;
+						text-align:center;
+						line-height: 36px;
+						font-size:14px;
+					}
+				}
+				li:nth-of-type(1) a{
+					color:#67af5b;
+				}
+			}
 		}
 	}
 	.home_banner{

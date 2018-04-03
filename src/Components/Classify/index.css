@@ -5,3 +5,26 @@
 .foot2_classify {
   background: url(https://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat 0px -40px;
   background-size: 2.34rem 1.63rem; }
+
+.classify_mark {
+  border-bottom: 2px solid #ed4044;
+  color: #ed4044;
+  padding-bottom: 0.08rem; }
+
+#classify .classify_head {
+  box-sizing: border-box;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  width: 100%;
+  background: #ff0;
+  display: flex;
+  border-bottom: 0.01rem solid #cbcbcb; }
+  #classify .classify_head div {
+    width: 50%;
+    height: 100%; }
+  #classify .classify_head .left {
+    text-align: right;
+    margin-right: 5%; }
+  #classify .classify_head .right {
+    margin-left: 5%;
+    text-align: left; }
