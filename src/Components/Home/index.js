@@ -78,6 +78,8 @@ class Home extends Component{
 							<li><NavLink to="/home">零食玩具</NavLink></li>
 							<li><NavLink to="/home">日用外出</NavLink></li>
 							<li><NavLink to="/home">美容香波</NavLink></li>
+
+							
 						</ul>
 					</div>
 				</div>
