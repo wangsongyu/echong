@@ -72,12 +72,12 @@ class Home extends Component{
 					<div className="home_head_down">
 						<ul className="list" ref="dragNav">
 							<li><NavLink to="/home">首页</NavLink></li>
-							<li><NavLink to="/home">狗狗主粮</NavLink></li>
-							<li><NavLink to="/home">服饰城</NavLink></li>
-							<li><NavLink to="/home">医疗保健</NavLink></li>
-							<li><NavLink to="/home">零食玩具</NavLink></li>
-							<li><NavLink to="/home">日用外出</NavLink></li>
-							<li><NavLink to="/home">哈哈哈</NavLink></li>
+							<li><NavLink to="/zhuliang">狗狗主粮</NavLink></li>
+							<li><NavLink to="/fushi">服饰城</NavLink></li>
+							<li><NavLink to="/baojian">医疗保健</NavLink></li>
+							<li><NavLink to="/wanju">零食玩具</NavLink></li>
+							<li><NavLink to="/waichu">日用外出</NavLink></li>
+							<li><NavLink to="/meirong">美容香波</NavLink></li>
 
 
 						</ul>
