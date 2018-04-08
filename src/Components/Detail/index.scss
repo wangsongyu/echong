@@ -1,0 +1,75 @@
+#detail{
+	header{
+		width:100%;
+		height:0.5rem;
+		padding:0px 15px;
+		box-sizing: border-box;
+		display: flex;
+		.back{
+			width:8%;
+			background:url(http://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -400px -10px;
+			background-size:234px 159px;
+			span{
+				width:20px;
+				height:30px;
+				background:url(http://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -197px -5px;
+				background-size:234px 159px;
+				display: inline-block;
+				margin-top:10px;
+			}
+		}
+		.title{
+			width:84%;
+			font-size: 18px;
+			line-height: 50px;
+			text-align: center;
+			ul{
+				text-align: center;
+				li{
+					display: inline-block;
+					width:16%;
+				}
+			}
+		}
+		.top_nav{
+			width:8%;
+			span{
+				width:20px;
+				height:30px;
+				background:url(http://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -216px -5px;
+				background-size:234px 159px;
+				display: inline-block;
+				margin-top:10px;
+				margin-left:5px;
+			}
+
+		}
+	}
+	// .carousel{
+	// 	img{
+	// 		width:100%;
+	// 	}
+	// }
+	.swiper-container{
+		img{
+			width:100%;
+			display: block;
+		}
+		.swiper-pagination{
+			text-align: right;
+		}
+		.count_icon{
+			width:0.25rem;
+			height:0.15rem;
+			position: absolute;
+			left:10px;
+			top:10px;
+			z-index:10;
+			img{
+				width:100%;
+			}
+		}
+	}
+
+
+}

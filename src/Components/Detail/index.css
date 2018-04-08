@@ -1,0 +1,54 @@
+#detail header {
+  width: 100%;
+  height: 0.5rem;
+  padding: 0px 15px;
+  box-sizing: border-box;
+  display: flex; }
+  #detail header .back {
+    width: 8%;
+    background: url(http://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -400px -10px;
+    background-size: 234px 159px; }
+    #detail header .back span {
+      width: 20px;
+      height: 30px;
+      background: url(http://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -197px -5px;
+      background-size: 234px 159px;
+      display: inline-block;
+      margin-top: 10px; }
+  #detail header .title {
+    width: 84%;
+    font-size: 18px;
+    line-height: 50px;
+    text-align: center; }
+    #detail header .title ul {
+      text-align: center; }
+      #detail header .title ul li {
+        display: inline-block;
+        width: 16%; }
+  #detail header .top_nav {
+    width: 8%; }
+    #detail header .top_nav span {
+      width: 20px;
+      height: 30px;
+      background: url(http://static.epetbar.com/static_web/wap/dist/images/background/img.png) no-repeat -216px -5px;
+      background-size: 234px 159px;
+      display: inline-block;
+      margin-top: 10px;
+      margin-left: 5px; }
+
+#detail .swiper-container img {
+  width: 100%;
+  display: block; }
+
+#detail .swiper-container .swiper-pagination {
+  text-align: right; }
+
+#detail .swiper-container .count_icon {
+  width: 0.25rem;
+  height: 0.15rem;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 10; }
+  #detail .swiper-container .count_icon img {
+    width: 100%; }
