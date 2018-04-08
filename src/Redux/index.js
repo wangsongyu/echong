@@ -1,16 +1,25 @@
-import { createStore } from 'redux'
+import {createStore} from 'redux';
 
-const reducer = (oldstate="用户名",data)=>{
-
+const reducer = (oldstate = 'yonghu',data)=>{
 	console.log(data)
-	return data.payload;
+	return data
 }
-
-
 
 const store = createStore(reducer);
 
 export default store;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

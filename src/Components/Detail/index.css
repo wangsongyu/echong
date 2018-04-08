@@ -52,3 +52,85 @@
   z-index: 10; }
   #detail .swiper-container .count_icon img {
     width: 100%; }
+
+#detail .goods_info h3 {
+  padding: 0 10px;
+  font-size: 13px;
+  color: #333;
+  font-weight: 100;
+  line-height: 1.5; }
+
+#detail .goods_info p {
+  padding: 0 10px;
+  color: #e75656;
+  font-size: 12px;
+  line-height: 2; }
+
+#detail .goods_info .goods_price {
+  padding: 10px 10px; }
+  #detail .goods_info .goods_price span:nth-of-type(1) {
+    font-size: 20px;
+    color: #ea5858; }
+    #detail .goods_info .goods_price span:nth-of-type(1) b {
+      font-size: 12px;
+      font-weight: 100; }
+  #detail .goods_info .goods_price span:nth-of-type(2) {
+    font-size: 12px;
+    color: #333;
+    text-decoration: line-through;
+    margin-left: 10px; }
+
+#detail .add_cart {
+  width: 100%;
+  height: 0.5rem;
+  display: flex;
+  position: fixed;
+  left: 0;
+  bottom: 0; }
+  #detail .add_cart .goods_collect {
+    width: 28%;
+    height: 0.5rem;
+    box-sizing: border-box;
+    padding: 0.05rem 0; }
+    #detail .add_cart .goods_collect a {
+      width: 100%;
+      height: 0.19rem;
+      display: block;
+      text-align: center; }
+      #detail .add_cart .goods_collect a i {
+        background: url(https://static.epetbar.com/static_wap/epetapp/pages/goods_detail/images/s1.png) no-repeat 0px 0px;
+        width: 0.2rem;
+        height: 0.19rem;
+        display: inline-block;
+        background-size: cover; }
+    #detail .add_cart .goods_collect p {
+      text-align: center;
+      line-height: 0.25rem;
+      color: #999; }
+  #detail .add_cart .goods_cart_count {
+    width: 28%;
+    height: 0.5rem;
+    box-sizing: border-box;
+    padding: 0.05rem 0; }
+    #detail .add_cart .goods_cart_count a {
+      width: 100%;
+      height: 0.19rem;
+      display: block;
+      text-align: center; }
+      #detail .add_cart .goods_cart_count a i {
+        background: url(https://static.epetbar.com/static_wap/epetapp/pages/goods_detail/images/car.png) no-repeat 0px 0px;
+        width: 0.2rem;
+        height: 0.19rem;
+        display: inline-block;
+        background-size: cover; }
+    #detail .add_cart .goods_cart_count p {
+      text-align: center;
+      line-height: 0.25rem;
+      color: #999; }
+  #detail .add_cart .goods_addtocart {
+    flex: 1;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    background: #f03e3e;
+    color: white;
+    text-align: center; }
