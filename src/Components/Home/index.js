@@ -256,7 +256,7 @@ class Home extends Component{
 				<div className="home_banner home_mengzhua">
 					<ReactSwipe key={this.state.mengzhualist.length} className="carousel" swipeOptions={{auto:2000,continuous: true}}>
 		                {
-		                	this.state.bannerlist.map(item=>
+		                	this.state.mengzhualist.map(item=>
 		                		<img key={item.advid} src={item.image}/>
 		                	)
 		                }
@@ -380,21 +380,21 @@ class Home extends Component{
 				con10:res.data.datas[32].content_images[0][0].image,
 				con11:res.data.datas[34].content_images[0][0].image,
 				con12:res.data.datas[36].content_images[0][0].image,
-				mengzhualist:res.data.datas[39].value,
+				mengzhualist:res.data.datas[41].value,
 				chaopinL:res.data.datas[10].value.left.img.image,
 				chaopinR:res.data.datas[10].value.right.img.image,
 				remaiL:res.data.datas[15].value.left.img.image,
-				mengzhuaL:res.data.datas[38].value.left.img.image,
-				xiaojuchangL:res.data.datas[44].value.left.img.image,
-				mengchong:res.data.datas[41].value.left.img.image,
+				mengzhuaL:res.data.datas[40].value.left.img.image,
+				xiaojuchangL:res.data.datas[46].value.left.img.image,
+				mengchong:res.data.datas[43].value.left.img.image,
 				video:res.data.datas[11].value[0].cover.image,
-				meng:res.data.datas[42].value[0].cover.image,
-				juchang:res.data.datas[45].value[0].cover.image,
+				meng:res.data.datas[44].value[0].cover.image,
+				juchang:res.data.datas[47].value[0].cover.image,
 				videoNews:res.data.datas[11].value[0],
-				mengchongsay:res.data.datas[42].value[0],
-				juchanglist:res.data.datas[45].value[0],
+				mengchongsay:res.data.datas[44].value[0],
+				juchanglist:res.data.datas[47].value[0],
 				eyeIcon:res.data.datas[11].value[0].visit_img.image,
-				line:res.data.datas[47].content_images[0][0].image
+				line:res.data.datas[49].content_images[0][0].image
 
 			})
 		})
