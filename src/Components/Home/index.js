@@ -96,7 +96,7 @@ class Home extends Component{
 					<ul>
 						{
 							this.state.iconlist.map(item=>
-								<li>
+								<li key={item.name}>
 									<img key={item} src={item.image} />
 								</li>
 							)
@@ -122,7 +122,7 @@ class Home extends Component{
 							{
 								this.state.everyday?this.state.everyday.map(item=>{
 
-									return <li>
+									return <li key={item.gid}>
 										<img src={item.image.image}/>
 										<p>{item.sale_price}</p>
 										<p>{item.little_price}</p>
@@ -136,7 +136,7 @@ class Home extends Component{
 					<div className="left">
 						{
 							this.state.zoneLPic.map(item=>{
-								return <div>
+								return <div key={item.atid}>
 											<img src={item.image} />
 										</div>
 							})
@@ -146,7 +146,7 @@ class Home extends Component{
 					<div className="right">
 						{
 							this.state.zoneRPic.map(item=>{
-								return <div>
+								return <div key={item.advid}>
 											<img src={item.image} />
 										</div>
 							})
@@ -188,7 +188,7 @@ class Home extends Component{
 					<div className="left">
 						{
 							this.state.fourConL.map(item=>{
-								return <div>
+								return <div key={item.advid}>
 									<img src={item.image} />
 								</div>
 							})	
@@ -197,7 +197,7 @@ class Home extends Component{
 					<div className="right">
 						{
 							this.state.fourConR.map(item=>{
-								return <div>
+								return <div key={item.advid}>
 									<img src={item.image} />
 								</div>
 							})	
@@ -347,7 +347,7 @@ class Home extends Component{
 	}
 	componentDidMount(){
 		axios.get('/v3/index/main.html?do=GetDynamicV315&pet_type=dog&version=358&system=wap&isWeb=1&_=1522646578494').then(res=>{
-				console.log(res.data.data['2438'].value[0].image)
+				console.log(res.data.data['3110'].content_images[1])
 				this.setState({
 					bannerlist:res.data.data['1'].value,
 					newpeople:res.data.data['2438'].value[0].image,
@@ -362,7 +362,7 @@ class Home extends Component{
 
 		})
 		axios.get('/v3/index/main.html?pet_type=dog&version=358&is_single=0&system=wap&isWeb=1&_=1522634568975').then(res=>{
-			console.log(res.data.menus)
+			console.log(res.data.datas[6].content_images[1])
 			this.setState({
 				menulist:res.data.menus,
 				iconlist:res.data.datas[2].menus,

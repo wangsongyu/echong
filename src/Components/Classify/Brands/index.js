@@ -37,9 +37,9 @@ class Brands extends Component{
 							{
 								this.state.con0?this.state.con0.list.map(item=>{
 
-									return  <li>
+									return  <li key={item.brandid}>
 												<div>
-													<img key={item.brandid} src={item.logo} />
+													<img src={item.logo} />
 												</div>
 												<p>{item.name}</p>
 												<span>{item.address}</span>
@@ -66,9 +66,9 @@ class Brands extends Component{
 							{
 								this.state.con1?this.state.con1.list.map(item=>{
 
-									return  <li>
+									return  <li key={item.brandid}>
 												<div>
-													<img key={item.brandid} src={item.logo} />
+													<img src={item.logo} />
 												</div>
 												<p>{item.name}</p>
 												<span>{item.address}</span>
@@ -95,9 +95,9 @@ class Brands extends Component{
 							{
 								this.state.con2?this.state.con2.list.map(item=>{
 
-									return  <li>
+									return  <li key={item.brandid}>
 												<div>
-													<img key={item.brandid} src={item.logo} />
+													<img src={item.logo} />
 												</div>
 												<p>{item.name}</p>
 												<span>{item.address}</span>
@@ -124,9 +124,9 @@ class Brands extends Component{
 							{
 								this.state.con3?this.state.con3.list.map(item=>{
 
-									return  <li>
+									return  <li key={item.brandid}>
 												<div>
-													<img key={item.brandid} src={item.logo} />
+													<img src={item.logo} />
 												</div>
 												<p>{item.name}</p>
 												<span>{item.address}</span>
@@ -153,9 +153,9 @@ class Brands extends Component{
 							{
 								this.state.con4?this.state.con4.list.map(item=>{
 
-									return  <li>
+									return  <li key={item.brandid}>
 												<div>
-													<img key={item.brandid} src={item.logo} />
+													<img src={item.logo} />
 												</div>
 												<p>{item.name}</p>
 												<span>{item.address}</span>
@@ -182,9 +182,9 @@ class Brands extends Component{
 							{
 								this.state.con5?this.state.con5.list.map(item=>{
 
-									return  <li>
+									return  <li key={item.brandid}>
 												<div>
-													<img key={item.brandid} src={item.logo} />
+													<img src={item.logo} />
 												</div>
 												<p>{item.name}</p>
 												<span>{item.address}</span>
@@ -211,9 +211,9 @@ class Brands extends Component{
 							{
 								this.state.con6?this.state.con6.list.map(item=>{
 
-									return  <li>
+									return  <li key={item.brandid}>
 												<div>
-													<img key={item.brandid} src={item.logo} />
+													<img src={item.logo} />
 												</div>
 												<p>{item.name}</p>
 												<span>{item.address}</span>
@@ -240,9 +240,9 @@ class Brands extends Component{
 							{
 								this.state.con7?this.state.con7.list.map(item=>{
 
-									return  <li>
+									return  <li key={item.brandid}>
 												<div>
-													<img key={item.brandid} src={item.logo} />
+													<img src={item.logo} />
 												</div>
 												<p>{item.name}</p>
 												<span>{item.address}</span>
@@ -269,9 +269,9 @@ class Brands extends Component{
 							{
 								this.state.con8?this.state.con8.list.map(item=>{
 
-									return  <li>
+									return  <li key={item.brandid}>
 												<div>
-													<img key={item.brandid} src={item.logo} />
+													<img src={item.logo} />
 												</div>
 												<p>{item.name}</p>
 												<span>{item.address}</span>

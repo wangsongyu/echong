@@ -1,5 +1,6 @@
 #Brands {
-  width: 100%; }
+  width: 100%;
+  margin-top: 0.4rem; }
   #Brands .brand_box {
     margin-top: 0.05rem;
     background: #fff;

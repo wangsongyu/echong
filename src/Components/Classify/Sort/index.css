@@ -1,15 +1,25 @@
 #Sort {
+  margin-top: 0.4rem;
   width: 100%;
   height: 100%;
   display: flex; }
   #Sort .SortAside {
+    background: #fff;
+    height: 100%;
+    margin-bottom: 0.55rem;
+    box-sizing: border-box;
     position: fixed;
     top: 0.4rem;
+    left: 0;
     width: 20%;
-    border-right: 5px solid #f3f4f5; }
+    border-right: 0.05rem solid #f3f4f5; }
     #Sort .SortAside .asideList {
-      box-sizing: border-box; }
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0; }
       #Sort .SortAside .asideList li {
+        box-sizing: border-box;
         text-align: center;
         border-bottom: 0.01rem solid #f3f4f5;
         width: 0.7rem;
@@ -21,3 +31,45 @@
         overflow: hidden; }
         #Sort .SortAside .asideList li a {
           display: block; }
+  #Sort .SortZone {
+    margin-bottom: 0.55rem;
+    border-top: 0.05rem solid #f3f4f5;
+    position: absolute;
+    top: 0.4rem;
+    right: 0;
+    width: 80%;
+    box-sizing: border-box;
+    background: #fff; }
+    #Sort .SortZone .zone {
+      width: 100%; }
+      #Sort .SortZone .zone .zone_head {
+        margin-top: 0.15rem;
+        height: 0.2rem;
+        line-height: 0.2rem;
+        width: 100%; }
+        #Sort .SortZone .zone .zone_head h3 {
+          color: #999;
+          text-indent: 0.1rem;
+          font-weight: 100;
+          font-size: 12px; }
+      #Sort .SortZone .zone .zone_content {
+        width: 100%; }
+        #Sort .SortZone .zone .zone_content ul {
+          padding: 0.05rem 0.05rem 0.2rem;
+          display: flex;
+          flex-wrap: wrap; }
+          #Sort .SortZone .zone .zone_content ul li {
+            box-sizing: border-box;
+            width: 33.3%;
+            padding: 0.05rem; }
+            #Sort .SortZone .zone .zone_content ul li img {
+              width: 100%; }
+            #Sort .SortZone .zone .zone_content ul li p {
+              height: 0.2rem;
+              padding-top: 0.07rem;
+              text-align: center;
+              font-size: 13px; }
+
+.sortCss {
+  background: #f3f4f5;
+  color: #ed406c; }

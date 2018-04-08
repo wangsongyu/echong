@@ -12,6 +12,10 @@
   padding-bottom: 0.1rem; }
 
 #classify .classify_head {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
   box-sizing: border-box;
   height: 0.4rem;
   line-height: 0.4rem;
